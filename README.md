@@ -62,23 +62,32 @@ To run the Python code on Raspberry Pi:
 
 1. Required folder structure:
 
+<pre>
 project_folder/
 ├── arduino.py
 ├── campainha_interface.py
-├── Caras/ (faces directory)
-└── NovasCaras/ (new faces directory)
+├── Caras/            ← Faces directory
+│   ├── person1.jpg
+│   └── person2.jpg
+└── NovasCaras/       ← New faces directory
+    └── unknown_visitors/
+</pre>
 
-
-# Python Requirements
-
-## Core Dependencies
+## Python Dependencies
 
 ```python
-# System
-import os
 import sys
+import os
 import time
 import re
-import json
-import threading
-from datetime import datetime
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+import smtplib
+import serial
+import numpy as np
+import face_recognition
+from PIL import Image
+import sounddevice as sd
+import wavio
+import requests
