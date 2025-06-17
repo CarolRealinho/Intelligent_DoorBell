@@ -30,7 +30,7 @@ Then in Arduino IDE: Sketch > Include Library > Add .ZIP library
 - **USB-Serial Converter**: May require driver installation for your specific converter model
 
 - **Hardware Connections**: 
-![Camera wiring diagram](camera_wiring.png) 
+![Camera wiring diagram](camera_wiring.PNG) 
 
 
 ---
@@ -50,7 +50,7 @@ Required library:
 - 16×2 LCD (I2C)
 
 ### Assembly:
-![Arduino assembly diagram](arduino_assembly.png) 
+![Arduino assembly diagram](arduino_assembly.PNG) 
 
 
 
